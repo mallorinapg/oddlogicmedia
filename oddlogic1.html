@@ -21,7 +21,7 @@
                 <p align="right">hamburger button</p>
             </div>
             <div class="portfolios">
-              <h4>Gallery</h4>
+              <h2>Gallery</h2>
               <p>From newborn photos to rock'n'roll solos, odd logic captures your moments.</p>
             </div>
             
@@ -34,7 +34,6 @@
                 <img src="img/olwed2.jpg" style="width:100%">
                 <img src="img/pet3.jpg" style="width:100%">
                 <img src="img/olcosplay2.jpg" style="width:100%">
-                <img src="img/olfam2.jpg" style="width:100%">
               </div>
               
               <div class="column">
@@ -63,47 +62,47 @@
                 <img src="img/olpromo5.jpg" style="width:100%">
                 <img src="img/olfam1.jpg" style="width:100%">
                 <img src="img/aboutme2.jpg" style="width:100%">
+                <img src="img/olfam2.jpg" style="width:100%">
               </div>
             </div>
-            <!--<div class="flex-container">
-              <div><img src="img/olcover2.jpg" width="300px" height="300px">Album Art</div>
-              <div><img src="img/olfam2.jpg" width="300px" height="300px">Family Moments</div>
-              <div><img src="img/olmusic3.jpg" width="300px" height="300px">Live Shows</div>
-              <div><img src="img/olportrait1.jpg" width="300px" height="300px">Portraits</div>
-              <div><img src="img/olwed2.jpg" width="300px" height="300px">Weddings</div>
-              <div><img src="img/olpromo2.jpg" width="300px" height="300px">Promotional</div>  
-            </div>-->
+            <h2>Packages</h2>
+            <div class="flex-container">
+              <div><img src="img/olmusic3.jpg" width="300px" height="300px">Live Events</div>
+              <div><img src="img/olcover2.jpg" width="300px" height="300px">Promotional Art</div>
+              <div><img src="img/olwed2.jpg" width="300px" height="300px">Portraits and Special Occasions</div> 
+            </div>
             
             <h2>About Me</h2>
               <p>I'm Tyler Cobb, I'm into heavy metal, puppies, and film-making.</p>
             <h2>The Editor</h2>
               <p>Mallori Puchino, I do photo-retouching, artwork orders, web-site management.</p>
             <h2>Contact</h2>
-            <div class="container">
-              <form action="action_page.php">
+            <form action="index.html" name="contactMeForm">
+              <div class="container">
             
-                <label for="fname">First Name</label>
-                <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                  <label for="fname">First Name</label>
+                  <input type="text" id="fname" name="firstname" placeholder="Your name..">
             
-                <label for="lname">Last Name</label>
-                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                  <label for="lname">Last Name</label>
+                  <input type="text" id="lname" name="lastname" placeholder="Your last name..">
             
-                <label for="email">Email Address</label>
-                <input type="text" id="email" name="email" placeholder="example@example.com">
+                  <label for="email">Email Address</label>
+                  <input type="text" id="email" name="email" placeholder="example@example.com">
                
-            
-                <label for="subject">Subject</label>
-                <textarea id="subject" name="subject" placeholder="Please include session type and date" style="height:200px"></textarea>
-            
-                <input type="submit" value="Submit">
-            
+                  <label for="subject">Message</label>
+                  <textarea id="message" name="msg" placeholder="Please include session type and date" style="height:200px"></textarea>
+        
+                </form>
               </form>
+              <div id="previewMsg">
+                <button type="button" onclick="preview()">Preview Message</button>
+              </div>
             </div>
-            <small>odd logic 2021 - All rights reserved</small>
+            <small>odd logic media 2021 - All rights reserved</small>
             <br>
             <small>Please contact oddlogicphotos@gmail.com for website related issues.</small> -->
-        </body>
-    <footer>
-
-    </footer>
+        <footer></footer>
+          </body>
+          <script src="/myjs.js"></script>
+   
 </html>
