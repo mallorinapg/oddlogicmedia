@@ -1,7 +1,99 @@
-* {
-    box-sizing: border-box;
+ /* hamburger icon */
+  /* POSITIONING HAMBURGER TOP LEFT OF BODY TAG*/
+  .menu-btn {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+    border: 3px solid #fff;
   }
-  
+
+  /* CREATING BARS - HAMBURGER */
+  .menu-btn_burger {
+    width: 50px;
+    height: 6px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(255, 101, 47, .2);
+    transition: all .5s ease-in-out;
+  }
+
+  .menu-btn_burger::before,
+  .menu-btn_burger::after {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 6px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(255, 101, 47, .2);
+    transition: all .5s ease-in-out;
+  }
+
+  .menu-btn_burger::before {
+    transform: translateY(-16px);
+  }
+
+  .menu-btn_burger::after {
+    transform: translateY(16px);
+  }
+
+  /*ANIMATION */
+  .menu-btn.open .menu-btn_burger {
+    transform: translateX(-50px);
+    background: transparent;
+    box-shadow: none;
+  }
+
+  .menu-btn.open .menu-btn_burger::before {
+    transform: rotate(45deg) translate(35px, -35px);
+  }
+
+  .menu-btn.open .menu-btn_burger::after {
+    transform: rotate(-45deg) translate(35px, 35px);
+  }
+
+  /* mobile viewport */
+  .navMenu {
+    display: none;
+  }
+
+  .navMenu:active {
+    position: relative;
+    display: block;
+    background-color: lavender;
+    text-align: center;
+  }
+
+  /*media query tablet and > */
+  @media all and (min-width: 768px) {
+
+    .navMenu {
+      display: flex;
+      background-color: transparent;
+      text-align: center;
+    }
+
+    .item {
+      position: relative;
+      display: inline-block;
+      justify-content: center;
+      align-items: center;
+      width: 80px;
+      height: 80px;
+      cursor: pointer;
+      transition: all .5s ease-in-out;
+    }
+
+    .menu-btn {
+      display: none;
+    }
+  }
+
   body {
       background-color: black;
       color: white;
@@ -14,14 +106,43 @@
     padding: 32px;
   }
 
+  h1 {
+    color: white;
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 70px;
+    font-weight: bolder;
+    text-align: center;
+  }
+
+  .portfolios > h2 {
+    font-size: 44px;
+    font-weight: bolder;
+    padding: 0;
+  }
+
   h2 {
     font-family: 'Courier New', Courier, monospace;
     color: white;
     font-size: 30px;
     font-weight: bolder;
     text-align: center;
+    padding: 18px;
+  }
+
+  h4 {
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    font-size: 20px;
+    font-weight: bolder;
+    text-align: center;
   }
   
+  /* Gallery */
+  * {
+    box-sizing: border-box;
+  }
+
   .row {
     display: flex;
     flex-wrap: wrap;
@@ -48,11 +169,12 @@
     }
   }
 
+  /*Contact Form */
   /* Style inputs with type="text", select elements and textareas */
 input[type=text], select, textarea {
     width: 100%; /* Full width */
-    padding: 12px; /* Some padding */ 
-    border: 5px solid #ccc; /* Gray border */
+    padding: 8px; /* Some padding */ 
+    border: 3px solid #ccc; /* Gray border */
     border-radius: 4px; /* Rounded borders */
     box-sizing: border-box; /* Make sure that padding and width stays in place */
     margin-top: 6px; /* Add a top margin */
@@ -61,17 +183,20 @@ input[type=text], select, textarea {
   }
   
   /* Style the submit button with a specific background color etc */
-  input[type=submit] {
+  .button {
     background-color: black;
     color: white;
     padding: 12px 20px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: 18px;
   }
   
   /* When moving the mouse over the submit button, add a darker green color */
-  input[type=submit]:hover {
+  .button:hover {
     background-color: #45a049;
   }
   
@@ -90,7 +215,8 @@ input[type=text], select, textarea {
     }
   }
 
-<!-- .flex-container {
+  /* Packages */
+ .flex-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -113,4 +239,8 @@ input[type=text], select, textarea {
   @media (max-width: 800px) {
     .flex-container {
       flex-direction: column;
-    } -->
+    }
+
+    small {
+      text-align: center;
+    }
