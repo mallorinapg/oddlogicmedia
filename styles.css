@@ -83,8 +83,8 @@
       display: inline-block;
       justify-content: center;
       align-items: center;
-      width: 80px;
-      height: 80px;
+      /* width: 80px; */
+      /* height: 80px; */
       cursor: pointer;
       transition: all .5s ease-in-out;
     }
@@ -135,6 +135,7 @@
     color: white;
     font-size: 20px;
     font-weight: bolder;
+    font-style: italic;
     text-align: center;
     padding: 30px;
   }
@@ -156,6 +157,10 @@
     text-align: center;
     font-size: 14px;
     font-style: italic;
+
+  }
+
+  .photographer {
 
   }
 
@@ -236,7 +241,7 @@ input[type=text], select, textarea {
     }
   }
 
-  /* Packages */
+  /* About Me and Packages */
  .flex-container {
     display: flex;
     flex-wrap: wrap;
@@ -257,7 +262,22 @@ input[type=text], select, textarea {
     color: white;
   }
 
+  /*.flex-container-about > img {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: black;
+    align-items: baseline;
+    align-content: space-around;
+  }*/
+
   @media (max-width: 800px) {
     .flex-container {
       flex-direction: column;
+    }
+  }
+    /*carousel*/
+    .item-c {
+      width: 100%;
+      min-height: 200px;
     }

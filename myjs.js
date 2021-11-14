@@ -5,18 +5,22 @@ function getData() {
     let last_name = document.contactMeForm.lastname.value;
     let email = document.contactMeForm.email.value;
     let message = document.contactMeForm.msg.value;
+    let errorMessagediv = document.getElementById("errorMessage");
+    if(errorMessagediv) {
+        errorMessagediv.innerHTML ="";
+    }
     if(validateEmail(email)) {
         allMsg.push(first_name);
     allMsg.push(last_name);
     allMsg.push(email);
     allMsg.push(message);
-    let space = `\u00A0\u00A0\u00A0\u00A0`;
-    let stringTemplate = `First Name:  ${first_name}${space}Last Name:  ${last_name}${space}Email:  ${email}${space}Message:  ${message}${space}`;
+    let stringTemplate = `First Name:  ${first_name}Last Name:  ${last_name}Email:  ${email}Message:  ${message}`;
+    
     return stringTemplate;
     }
-
     else {
-        return "please check your email format";
+
+        return "please enter a valid email";
     }
 }
 
@@ -30,6 +34,7 @@ function preview() {
     let data = getData();
     let previewMsg = document.getElementById("previewMsg");
     let div = document.createElement("div");
+    div.id = "errorMessage";
     div.innerHTML = `${data}`;
     previewMsg.appendChild(div);
     document.contactMeForm.reset();
@@ -56,14 +61,14 @@ menuBtn.addEventListener('click', () => {
 
 /*Carousel*/
 // Activate Carousel
-$("#myCarousel").carousel();
+/* $("#myCarousel").carousel(); */
 
 // Enable Carousel Indicators
-$(".item").click(function(){
+/* $(".item").click(function(){
   $("#myCarousel").carousel(1);
-});
+}); */
 
 // Enable Carousel Controls
-$(".left").click(function(){
+/* $(".left").click(function(){
   $("#myCarousel").carousel("prev");
-});
+}); */
