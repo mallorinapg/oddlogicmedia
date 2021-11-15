@@ -209,6 +209,13 @@ h4 {
       padding: 0 4px;
     }
 
+    /*social media logos*/
+    /* .flex-container-smlogos img {
+      align-items: center;
+      width: 100px;
+      height: 100px;
+    } */
+
     .flex-item-about-me,
     .flex-item-editor {
       flex: 50%;
