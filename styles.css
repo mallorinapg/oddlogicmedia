@@ -1,3 +1,129 @@
+body {
+  background-color: black;
+  color: white;
+  margin: 0;
+  font-family: 'Courier New', Courier, monospace;
+} 
+
+img {
+  max-width: 100%;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration-line: none;
+}
+
+.header {
+  text-align: center;
+  padding: 32px;
+}
+
+h1 {
+  color: white;
+  margin: 0;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 70px;
+  font-weight: bolder;
+  text-align: center;
+}
+
+.portfolios>h2 {
+  font-size: 44px;
+  font-weight: bolder;
+  padding: 0;
+}
+
+h2 {
+  font-family: 'Courier New', Courier, monospace;
+  color: white;
+  font-size: 30px;
+  font-weight: bolder;
+  text-align: center;
+  padding: 30px;
+}
+
+h3 {
+  font-family: 'Courier New', Courier, monospace;
+  color: white;
+  font-size: 20px;
+  font-weight: bolder;
+  font-style: italic;
+  text-align: center;
+  padding: 30px;
+}
+
+h4 {
+  font-family: 'Courier New', Courier, monospace;
+  color: white;
+  font-size: 20px;
+  font-weight: bolder;
+  text-align: center;
+}
+
+.pkginfo {
+  text-align: center;
+  font-size: 18px;
+}
+
+.disclaimer {
+  text-align: center;
+  font-size: 14px;
+  font-style: italic;
+}
+
+/*Contact Form */
+  /* Style inputs with type="text", select elements and textareas */
+  input[type=text], 
+  select, 
+  textarea {
+    width: 100%; 
+    /* Full width */
+    padding: 8px; 
+    /* Some padding */ 
+    border: 3px solid #ccc; 
+    /* Gray border */
+    border-radius: 4px; 
+    /* Rounded borders */
+    box-sizing: border-box; 
+    /* Make sure that padding and width stays in place */
+    margin-top: 6px; 
+    /* Add a top margin */
+    margin-bottom: 16px; 
+    /* Bottom margin */
+    resize: vertical 
+    /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+  
+  /* Style the submit button with a specific background color etc */
+  .button {
+    background-color: black;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: 18px;
+  }
+
+  /* When moving the mouse over the submit button, add a darker green color */
+  .button:hover {
+    background-color: #45a049
+  }
+
+  /* Add a background color and some padding around the form */
+  form {
+    border-radius: 5px;
+    background-color: rgb(63, 20, 63);
+    padding: 20px;
+  }
+ 
+ 
  /* hamburger icon */
   /* POSITIONING HAMBURGER TOP LEFT OF BODY TAG*/
   .menu-btn {
@@ -58,6 +184,12 @@
   }
 
   /* mobile viewport */
+  .flex-container {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+  }
+
   .navMenu {
     display: none;
   }
@@ -65,28 +197,69 @@
   .navMenu:active {
     position: relative;
     display: block;
-    background-color: lavender;
     text-align: center;
+    background-color: white;
+  }
+
+  /* Responsive layout - makes the two comlumns stack */
+  @media all and (min-width: 650px) {
+    .flex-container {
+      flex-direction: row;
+      flex-wrap: wrap;
+      padding: 0 4px;
+    }
+
+    .flex-item-about-me,
+    .flex-item-editor {
+      flex: 50%;
+    }
+
+    .flex-item-pkg-1,
+    .flex-item-pkg-2,
+    .flex-item-pkg-3 {
+      flex: 33.3%;
+    }
+
+    .flex-item-pkg-1 img,
+    .flex-item-pkg-2 img,
+    .flex-item-pkg-3 img {
+      width: 300px;
+      height: 300px;
+    }
+    
+    .flex-item-photo-1,
+    .flex-item-photo-2,
+    .flex-item-photo-3,
+    .flex-item-photo-4 {
+      flex: 50%;
+      padding: 0 4px;
+    }
   }
 
   /*media query tablet and > */
   @media all and (min-width: 768px) {
 
+    .navMenu:active,
     .navMenu {
       display: flex;
-      background-color: transparent;
+      min-width: 100%;
+      min-height: 100px;
       text-align: center;
+      background-color: honeydew;
     }
 
     .item {
-      position: relative;
-      display: inline-block;
-      justify-content: center;
-      align-items: center;
-      /* width: 80px; */
-      /* height: 80px; */
+      display: inline;
+      justify-content: space-around;
       cursor: pointer;
       transition: all .5s ease-in-out;
+    }
+
+    li.item {
+      width: 100%;
+      min-height: 50px;
+      margin: 10px 15px;
+      border-radius: 10px;
     }
 
     .menu-btn {
@@ -94,190 +267,13 @@
     }
   }
 
-  body {
-      background-color: black;
-      color: white;
-      margin: 0;
-      font-family: 'Courier New', Courier, monospace;
-  }
-  
-  .header {
-    text-align: center;
-    padding: 32px;
-  }
+  /* Responsive layout - 4 column layout */
+  @media all and (min-width: 900px) {
 
-  h1 {
-    color: white;
-    margin: 0;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 70px;
-    font-weight: bolder;
-    text-align: center;
-  }
-
-  .portfolios > h2 {
-    font-size: 44px;
-    font-weight: bolder;
-    padding: 0;
-  }
-
-  h2 {
-    font-family: 'Courier New', Courier, monospace;
-    color: white;
-    font-size: 30px;
-    font-weight: bolder;
-    text-align: center;
-    padding: 30px;
-  }
-
-  h3 {
-    font-family: 'Courier New', Courier, monospace;
-    color: white;
-    font-size: 20px;
-    font-weight: bolder;
-    font-style: italic;
-    text-align: center;
-    padding: 30px;
-  }
-
-  h4 {
-    font-family: 'Courier New', Courier, monospace;
-    color: white;
-    font-size: 20px;
-    font-weight: bolder;
-    text-align: center;
-  }
-
-  .pkginfo {
-    text-align: center;
-    font-size: 18px;
-  }
-  
-  .disclaimer {
-    text-align: center;
-    font-size: 14px;
-    font-style: italic;
-
-  }
-
-  .photographer {
-
-  }
-
-  /* Gallery */
-  * {
-    box-sizing: border-box;
-  }
-
-  .row {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0 4px;
-  }
-  
-  /* Create four equal columns that sits next to each other */
-  .column {
-    flex: 25%;
-    max-width: 25%;
-    padding: 0 4px;
-  }
-  
-  .column img {
-    margin-top: 8px;
-    vertical-align: middle;
-  }
-  
-  /* Responsive layout - makes a two column-layout instead of four columns */
-  @media (max-width: 800px) {
-    .column {
-      flex: 50%;
-      max-width: 50%;
+    .flex-item-photo-1,
+    .flex-item-photo-2,
+    .flex-item-photo-3,
+    .flex-item-photo-4 {
+      flex: 25%;
     }
   }
-
-  /*Contact Form */
-  /* Style inputs with type="text", select elements and textareas */
-input[type=text], select, textarea {
-    width: 100%; /* Full width */
-    padding: 8px; /* Some padding */ 
-    border: 3px solid #ccc; /* Gray border */
-    border-radius: 4px; /* Rounded borders */
-    box-sizing: border-box; /* Make sure that padding and width stays in place */
-    margin-top: 6px; /* Add a top margin */
-    margin-bottom: 16px; /* Bottom margin */
-    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
-  }
-  
-  /* Style the submit button with a specific background color etc */
-  .button {
-    background-color: black;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-family: 'Courier New', Courier, monospace;
-    font-weight: bold;
-    font-size: 18px;
-  }
-  
-  /* When moving the mouse over the submit button, add a darker green color */
-  .button:hover {
-    background-color: #45a049;
-  }
-  
-  /* Add a background color and some padding around the form */
-  .container {
-    border-radius: 5px;
-    background-color: rgb(63, 20, 63);
-    padding: 20px;
-  }
-  
-  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-  @media (max-width: 600px) {
-    .column {
-      flex: 100%;
-      max-width: 100%;
-    }
-  }
-
-  /* About Me and Packages */
- .flex-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    background-color: black;
-    align-items: baseline;
-    align-content: space-around;
-  }
-  
-  .flex-container > div {
-    background-color: rgb(63, 20, 63);
-    width: 325px;
-    margin: 4px;
-    text-align: center;
-    line-height: 16px;
-    font-size: 16px;
-    font-weight: bolder;
-    color: white;
-  }
-
-  /*.flex-container-about > img {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    background-color: black;
-    align-items: baseline;
-    align-content: space-around;
-  }*/
-
-  @media (max-width: 800px) {
-    .flex-container {
-      flex-direction: column;
-    }
-  }
-    /*carousel*/
-    .item-c {
-      width: 100%;
-      min-height: 200px;
-    }
