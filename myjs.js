@@ -14,7 +14,7 @@ function getData() {
     allMsg.push(last_name);
     allMsg.push(email);
     allMsg.push(message);
-    let stringTemplate = `First Name:  ${first_name}Last Name:  ${last_name}Email:  ${email}Message:  ${message}`;
+    let stringTemplate = `First Name:  ${first_name} &nbsp; Last Name:  ${last_name} &nbsp; Email:  ${email} &nbsp; Message:  ${message}`;
     
     return stringTemplate;
     }
@@ -58,17 +58,3 @@ menuBtn.addEventListener('click', () => {
         nav.classList.add('navMenu');
     }
 });
-
-/*Carousel*/
-// Activate Carousel
-/* $("#myCarousel").carousel(); */
-
-// Enable Carousel Indicators
-/* $(".item").click(function(){
-  $("#myCarousel").carousel(1);
-}); */
-
-// Enable Carousel Controls
-/* $(".left").click(function(){
-  $("#myCarousel").carousel("prev");
-}); */
