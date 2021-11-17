@@ -7,7 +7,7 @@ The CSS focus for this project includes:
 
 **A horizontal navigation menu that at desktop that collapses into a hamburger menu when reduced to mobile sizes. The animated hamburger button opens and closes, transforming to an X when opened, revealing a vertical navigation menu. This can be viewed on the home (index.html) and packages pages.
 
-**A Flexbox or CSS Grid to organize content areas based on mobile or desktop views that rearranges content from a horizontal layout to a vertical layout when reduced from desktop to mobile sizes. This is implimented with the gallery and "Packages" section on the home page, or index.html. 
+**A Flexbox or CSS Grid to organize content areas based on mobile or desktop views that rearranges content from a horizontal layout to a vertical layout when reduced from desktop to mobile sizes. This is implimented within the photo gallery, "Packages" section, "About Me", and "Editor" on the home page, or index.html. 
 
 The Javascript focus for this project includes:
 

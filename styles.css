@@ -1,9 +1,10 @@
 body {
   background-color: black;
   color: white;
-  margin: 0%;
+  margin: 0;
   font-family: 'Courier New', Courier, monospace;
-} 
+  padding: 0;
+}
 
 .fa {
   padding: 15px;
@@ -36,18 +37,19 @@ img {
 
 nav {
   border-radius: 5px;
+  ;
 }
 
 ul {
   list-style-type: none;
 }
 
-li.item>a {
-  color: white;
-}
-
 a {
   text-decoration-line: none;
+}
+
+li.item>a {
+  color: white;
 }
 
 .header {
@@ -59,10 +61,9 @@ h1 {
   color: white;
   margin: 0;
   font-family: 'Courier New', Courier, monospace;
-  font-size: 90px;
+  font-size: 70px;
   font-weight: bolder;
   text-align: center;
-  padding: 0%;
 }
 
 p {
@@ -72,6 +73,13 @@ p {
   font-size: 28px;
   font-weight: bolder;
   text-align: center;
+}
+
+.about {
+  display: flex;
+  align-self: flex-start;
+  font-size: 18px;
+  float: right;
 }
 
 .portfolios>p {
@@ -88,16 +96,26 @@ p {
 h2 {
   font-family: 'Courier New', Courier, monospace;
   color: white;
-  font-size: 40px;
+  font-size: 30px;
   font-weight: bolder;
   text-align: center;
-  padding: 25px;
+  padding: 30px;
+}
+
+h3 {
+  font-family: 'Courier New', Courier, monospace;
+  color: white;
+  font-size: 20px;
+  font-weight: bolder;
+  font-style: italic;
+  text-align: center;
+  padding: 30px;
 }
 
 h4 {
   font-family: 'Courier New', Courier, monospace;
   color: white;
-  font-size: 26px;
+  font-size: 20px;
   font-weight: bolder;
   text-align: center;
 }
@@ -110,15 +128,8 @@ h5 {
   text-align: center;
 }
 
-/*package subtitle*/
-a {
-  color: white;
-  font-size: 18px;
-}
-
-a>p {
-  font-size: 18px !important;
-  text-align: center;
+.pkginfo {
+  padding: 0.9%;
 }
 
 .pkginfo>p {
@@ -147,32 +158,32 @@ footer {
 }
 
 /*Contact Form */
-  /* Style inputs with type="text", select elements and textareas */
-  input[type=text], 
-  select, 
-  textarea {
-    width: 100%; 
-    /* Full width */
-    padding: 8px; 
-    /* Some padding */ 
-    border: 3px solid #ccc; 
-    /* Gray border */
-    border-radius: 4px; 
-    /* Rounded borders */
-    box-sizing: border-box; 
-    /* Make sure that padding and width stays in place */
-    margin-top: 6px; 
-    /* Add a top margin */
-    margin-bottom: 16px; 
-    /* Bottom margin */
-    resize: vertical 
+/* Style inputs with type="text", select elements and textareas */
+input[type=text],
+select,
+textarea {
+  width: 100%;
+  /* Full width */
+  padding: 8px;
+  /* Some padding */
+  border: 3px solid #ccc;
+  /* Gray border */
+  border-radius: 4px;
+  /* Rounded borders */
+  box-sizing: border-box;
+  /* Make sure that padding and width stays in place */
+  margin-top: 6px;
+  /* Add a top margin */
+  margin-bottom: 16px;
+  /* Bottom margin */
+  resize: vertical
     /* Allow the user to vertically resize the textarea (not horizontally) */
-  }
+}
 
-  div#previewMsg {
+div#previewMsg {
     text-align: center;
   }
-  
+
   /* Style the submit button with a specific background color etc */
   .button {
     background-color: rgb(141, 8, 141);
@@ -191,189 +202,198 @@ footer {
     background-color: #a78ce7
   }
 
-  /* Add a background color and some padding around the form */
-  form {
-    max-width: 700px;
-    margin: 0 auto;
-    border-radius: 5px;
-    background-color: rgb(63, 20, 63);
-    padding: 20px;
-  }
- 
- 
- /* hamburger icon */
-  /* POSITIONING HAMBURGER TOP LEFT OF BODY TAG*/
-  .menu-btn {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 80px;
-    height: 80px;
-    cursor: pointer;
-    transition: all .5s ease-in-out;
-    border: 3px solid #fff;
-  }
+/* Add a background color and some padding around the form */
+form {
+  max-width: 700px;
+  margin: 0 auto;
+  border-radius: 5px;
+  background-color: rgb(63, 20, 63);
+  padding: 20px;
+}
 
-  /* CREATING BARS - HAMBURGER */
-  .menu-btn_burger {
-    width: 50px;
-    height: 6px;
-    background: #fff;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(255, 101, 47, .2);
-    transition: all .5s ease-in-out;
-  }
+/* hamburger icon */
+/* POSITIONING HAMBURGER TOP LEFT OF BODY TAG*/
+.menu-btn {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 80px;
+  cursor: pointer;
+  transition: all .5s ease-in-out;
+  border: 3px solid #fff;
+}
 
-  .menu-btn_burger::before,
-  .menu-btn_burger::after {
-    content: "";
-    position: absolute;
-    width: 50px;
-    height: 6px;
-    background: #fff;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(255, 101, 47, .2);
-    transition: all .5s ease-in-out;
-  }
+/* CREATING BARS - HAMBURGER */
+.menu-btn_burger {
+  width: 50px;
+  height: 6px;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(255, 101, 47, .2);
+  transition: all .5s ease-in-out;
+}
 
-  .menu-btn_burger::before {
-    transform: translateY(-16px);
-  }
+.menu-btn_burger::before,
+.menu-btn_burger::after {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 6px;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(255, 101, 47, .2);
+  transition: all .5s ease-in-out;
+}
 
-  .menu-btn_burger::after {
-    transform: translateY(16px);
-  }
+.menu-btn_burger::before {
+  transform: translateY(-16px);
+}
 
-  /*ANIMATION */
-  .menu-btn.open .menu-btn_burger {
-    transform: translateX(-50px);
-    background: transparent;
-    box-shadow: none;
-  }
+.menu-btn_burger::after {
+  transform: translateY(16px);
+}
 
-  .menu-btn.open .menu-btn_burger::before {
-    transform: rotate(45deg) translate(35px, -35px);
-  }
+/*ANIMATION */
+.menu-btn.open .menu-btn_burger {
+  transform: translateX(-50px);
+  background: transparent;
+  box-shadow: none;
+}
 
-  .menu-btn.open .menu-btn_burger::after {
-    transform: rotate(-45deg) translate(35px, 35px);
-  }
+.menu-btn.open .menu-btn_burger::before {
+  transform: rotate(45deg) translate(35px, -35px);
+}
 
-  /* mobile viewport */
+.menu-btn.open .menu-btn_burger::after {
+  transform: rotate(-45deg) translate(35px, 35px);
+}
+
+/* mobile viewport */
+.flex-container {
+  max-width: 1250px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+}
+
+.flex-item-pkg-1 img,
+.flex-item-pkg-2 img,
+.flex-item-pkg-3 img {
+  width: 100%
+}
+
+.navMenu {
+  display: none;
+}
+
+.navMenu:active {
+  position: relative;
+  display: block;
+  text-align: center;
+  text-decoration-color: white;
+}
+
+/* Responsive layout - makes the two columns stack */
+@media all and (min-width: 650px) {
   .flex-container {
-    max-width: 1250px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    background-color: black;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
   }
 
-  .navMenu {
-    display: none;
+.flex-item-pkg-1 img,
+.flex-item-pkg-2 img,
+.flex-item-pkg-3 img {
+  width: 250px;
+  height: 250px;
+}
+
+  .flex-item-about-me,
+  .flex-item-editor {
+    flex: 100%;
+    align-self: center;
   }
 
-  .navMenu:active {
-    position: relative;
-    display: block;
-    text-align: center;
-    background-color: white;
+  .flex-item-about-me img,
+  .flex-item-editor img {
+    display: inline;
+    width: 200px;
+    height: 300px;
   }
 
   .flex-item-pkg-1,
   .flex-item-pkg-2,
   .flex-item-pkg-3 {
-    flex: 30%;
-    text-align: center;
+    flex: 25%;
     align-self: center;
-    padding: 6px;
-    border: 1px solid red;
-    min-width: 300px;
+    padding: 5px;
   }
 
-  .about-container {
-    max-width: 50%;
+  .flex-item-photo-1,
+  .flex-item-photo-2,
+  .flex-item-photo-3,
+  .flex-item-photo-4 {
+    flex: 48%;
+    padding: 4px;
+  }
+}
+
+/*media query tablet and > */
+@media all and (min-width: 768px) {
+
+  .navMenu:active,
+  .navMenu {
+    display: flex;
+    min-width: 100%;
+    min-height: 100px;
     text-align: center;
-    align-self: center;
-    border: 1px solid red;
-    margin: 0 auto;
+    background-color: black;
   }
 
-  .about-container>div>img {
-    min-width: 100px;
+  .item {
+    display: inline;
+    justify-content: space-around;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
   }
 
-  /* Responsive layout - makes the two comlumns stack */
-  @media all and (min-width: 650px) {
-    .flex-container {
-      flex-direction: row;
-      flex-wrap: wrap;
-      align-content: center;
-    }
-
-    /*.flex-item-about-me,
-    .flex-item-editor {
-      flex: 50%;
-      align-self: center;
-    }*/
-
-    /*.flex-item-pkg-1,
-   .flex-item-pkg-2,
-   .flex-item-pkg-3 {
-     flex: 33%;
-     text-align: center;
-     align-self: center;
-     padding: 0px;
-     border: 1px solid red;
-   }*/
-
-    .flex-item-photo-1,
-    .flex-item-photo-2,
-    .flex-item-photo-3,
-    .flex-item-photo-4 {
-      flex: 50%;
-    }
+  li.item {
+    width: 100%;
+    min-height: 50px;
+    margin: 10px 15px;
+    border-radius: 10px;
   }
 
-  /*media query tablet and > */
-  @media all and (min-width: 768px) {
+  .menu-btn {
+    display: none;
+  }
+}
 
-    .navMenu:active,
-    .navMenu {
-      display: flex;
-      min-width: 100%;
-      min-height: 100px;
-      text-align: center;
-      background-color: rgb(63, 20, 63);
-    }
+/* Responsive layout - 4 column layout */
+@media all and (min-width: 900px) {
 
-    .item {
-      display: inline;
-      justify-content: space-around;
-      cursor: pointer;
-      transition: all .5s ease-in-out;
-    }
-
-    li.item {
-      width: 100%;
-      min-height: 50px;
-      margin: 10px 15px;
-      border-radius: 10px;
-    }
-
-    .menu-btn {
-      display: none;
-    }
+  .flex-item-photo-1,
+  .flex-item-photo-2,
+  .flex-item-photo-3,
+  .flex-item-photo-4 {
+    flex: 24%;
+    margin: 10px auto;
+    padding: 4px;
   }
 
-  /* Responsive layout - 4 column layout */
-  @media all and (min-width: 900px) {
+  .flex-item-pkg-1 img,
+  .flex-item-pkg-2 img,
+  .flex-item-pkg-3 img {
+    width: 300px;
+    height: 300px;
+}
 
-    .flex-item-photo-1,
-    .flex-item-photo-2,
-    .flex-item-photo-3,
-    .flex-item-photo-4 {
-      flex: 25%;
-      margin: 10px auto;
-    }
+  .flex-item-about-me img,
+  .flex-item-editor img {
+    width: 350px;
+    height: 450px;
   }
+}
