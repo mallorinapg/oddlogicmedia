@@ -110,6 +110,17 @@ h5 {
   text-align: center;
 }
 
+/*package subtitle*/
+a {
+  color: white;
+  font-size: 18px;
+}
+
+a>p {
+  font-size: 18px !important;
+  text-align: center;
+}
+
 .pkginfo>p {
   text-align: center;
   font-size: 22px;
@@ -269,6 +280,29 @@ footer {
     background-color: white;
   }
 
+  .flex-item-pkg-1,
+  .flex-item-pkg-2,
+  .flex-item-pkg-3 {
+    flex: 30%;
+    text-align: center;
+    align-self: center;
+    padding: 6px;
+    border: 1px solid red;
+    min-width: 300px;
+  }
+
+  .about-container {
+    max-width: 50%;
+    text-align: center;
+    align-self: center;
+    border: 1px solid red;
+    margin: 0 auto;
+  }
+
+  .about-container>div>img {
+    min-width: 100px;
+  }
+
   /* Responsive layout - makes the two comlumns stack */
   @media all and (min-width: 650px) {
     .flex-container {
@@ -277,23 +311,21 @@ footer {
       align-content: center;
     }
 
-    .flex-item-about-me,
+    /*.flex-item-about-me,
     .flex-item-editor {
       flex: 50%;
       align-self: center;
-    }
+    }*/
 
+    /*.flex-item-pkg-1,
    .flex-item-pkg-2,
    .flex-item-pkg-3 {
-     flex: 25%;
+     flex: 33%;
+     text-align: center;
      align-self: center;
-     padding: 5px;
-   }
-
-   .flex-item-pkg-1 {
-     flex: 45%;
-     align-self: center;
-   }
+     padding: 0px;
+     border: 1px solid red;
+   }*/
 
     .flex-item-photo-1,
     .flex-item-photo-2,
