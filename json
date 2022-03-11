@@ -1,0 +1,33 @@
+ {
+        "packages": [{
+            "item": "basic",
+            "desc": "consultation, one hour session, collection of twenty edited digital photos",
+            "price": 200
+        },
+        {
+            "item": "standard",
+            "desc": "consultation, two hour session, collection of twenty-five edited digital photos",
+            "price": 250
+        },
+        {   
+            "item": "premium",
+            "desc": "consultation, three hour session, collection of thirty edited digital photos",
+            "price": 300
+        },
+        {
+            "item": "bonus1",
+            "desc": "ten additional photos",
+            "price": 30
+        },
+        {
+            "item": "bonus2",
+            "desc": "ten prints",
+            "price": 50
+        },
+        {
+            "item": "bonus3",
+            "desc": "wall art",
+            "price": 75
+        }
+    ]
+}

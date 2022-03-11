@@ -19,6 +19,8 @@ This is a business website for Odd Logic Photography and Film. This serves as a 
 
 1. A ‘Contact Us’ form), that validates at least one field (ex: email is in the correct format) and then displays that information on the page back to the user with a button click (Preview). This can be seen near the bottom of both pages.
 
+2. A countdown clock that collects the current date and time from the user's system and calculates and displays in real time the remaining time until the set date.
+
 ## Media Queries
 
 Media queries are implemented for the navigation hamburger button, the gallery images grid, and the packages flexbox.
@@ -34,8 +36,14 @@ In order to view the site please:
 
 ### Future plans for the project include:
 
-1. Creating a pop-up form that is responsive to the contact form, thanking the user for their message and letting them know we will be back to them within 48hrs.
+1. Edit the form to save the values on click event to an external file for future retrieval. For now that will be a file in the cloud.
 
-2. Three bootstrap carousels show/hide multiple content areas on the Packages page through clicking a button or some other user interaction.
+2. Create a package calculator that takes user input to determine estimates of various prices and displays that back to the user.
 
-3. Perform a Web Accessibility Compliance review on site and document all the tools and testing used to verify site is accessible. This may involve a written write-up, screenshots, and other ways of showing that site has been evaluated for accessibility compliance, including  the report in your GitHub repository.
+3. Creating a pop-up form that is responsive to the contact form, thanking the user for their message and letting them know we will be back to them within 48hrs.
+
+4. Three bootstrap carousels show/hide multiple content areas on the Packages page through clicking a button or some other user interaction.
+
+5. Perform a Web Accessibility Compliance review on site and document all the tools and testing used to verify site is accessible. This may involve a written write-up, screenshots, and other ways of showing that site has been evaluated for accessibility compliance, including  the report in your GitHub repository.
+
+6. Reformat the header, footer, hamburger btn to come from json file.
