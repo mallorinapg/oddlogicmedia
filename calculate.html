@@ -1,29 +1,190 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <title>Odd Logic Photography</title>
+    <meta name="Mallori Puchino" content="Odd Logic">
+    <meta name="description" content="website for Odd Logic">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="calc.js" async></script>
 </head>
 <body>
+    <div class="menu-btn">
+        <div class="menu-btn_burger"></div>
+      </div>
+
+      <div class="flex-container">
+        <nav class="navMenu">
+          <ul>
+            <li class="item"><a href="index.html">HOME</a></li>
+            <li class="item"><a href="#aboutme">ABOUT</a></li>
+            <li class="item"><a href="#contact">CONTACT</a></li>
+            <li class="item"><a href="packages.html">PACKAGES</a></li>
+          </ul>
+        </nav>
+      </div>
+    <div class="header">
+        <h1>odd logic</h1>
+        <p>photography and film</p>
+        <a href="https://www.facebook.com/tyler.cobb.505960" class="fa fa-facebook"></a>
+        <a href="https://www.instagram.com/odd_logic_photography/" class="fa fa-instagram"></a>
+      </div>
+      <section class="container content-section">
+        <h2 class="section-header">Packages</h2>
+        <div class="shop-items">
+            <div class="shop-item">
+                <span class="shop-item-title">Basic</span>
+                <img class="shop-item-image" src="img/olcover2.jpg">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">$200.00</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="shop-item">
+                <span class="shop-item-title">Standard</span>
+                <img class="shop-item-image" src="img/olwed2.jpg">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">$250.00</span>
+                    <button class="btn btn-primary shop-item-button"type="button">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="shop-item">
+                <span class="shop-item-title">Premium</span>
+                <img class="shop-item-image" src="img/olmusic3.jpg">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">$300.00</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container content-section">
+        <h2 class="section-header">Additional Services</h2>
+        <div class="shop-items">
+            <div class="shop-item">
+                <span class="shop-item-title">10 Bonus Photos</span>
+                <img class="shop-item-image" src="img/olfam1.jpg">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">$30.00</span>
+                    <button onClick() class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="shop-item">
+                <span class="shop-item-title">10 Prints</span>
+                <img class="shop-item-image" src="img/olpromo5.jpg">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">$50.00</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="shop-item">
+                <span class="shop-item-title">Wall Art</span>
+                <img class="shop-item-image" src="img/pet2.jpg">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">$75.00</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container content-section">
+        <h2 class="section-header">CART</h2>
+        <div class="cart-row">
+            <span class="cart-item cart-header cart-column">ITEM</span>
+            <span class="cart-price cart-header cart-column">PRICE</span>
+            <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+        </div>
+        <div class="cart-items">
+        </div>
+        <div class="cart-total">
+            <strong class="cart-total-title">Estimate</strong>
+            <span class="cart-total-price">$0</span>
+        </div>
+        <button class="btn btn-primary btn-purchase" type="button">CLEAR</button>
+    </section>
+    //*<h1>Get an Estimate</h1>
+    
+    <h4>Basic $200</h4>
+            <div class="pkginfobreakdown">
+                <p>Pre-Session Consultation*</p>
+                <p>Up to 1 hour session on location</p>
+                <p>Professional Retouching</p>
+                <p>Digital Collection of 20 Photos</p>
+              </div>
+
+    <h4>Standard $250</h4>
+            <div class="pkginfobreakdown">
+                <p>Pre-Session Consultation*</p>
+                <p>Up to 2 hour session on location</p>
+                <p>Professional Retouching</p>
+                <p>Digital Collection of 25 Photos</p>
+              </div>
+
+    <h4>Premium $300</h4>
+            <div class="pkginfobreakdown">
+                <p>Pre-Session Consultation*</p>
+                <p>Up to 3 hour session on location</p>
+                <p>Professional Retouching</p>
+                <p>Digital Collection of 30 Photos</p>
+              </div>
+              
+    <h2>Additional Services</h2>
+            <div class="pkginfobreakdown">
+                <p>Additional Photos for Digital Collection $30 per 10</p>
+                <p>Prints $50 per 10</p>
+                <p>Wall Art $75 each</p>
+            </div>
     <div id="checkbox"></div>
     <form name="formCalc">
-        <label for="basic">Basic</label>
-        <input type="checkbox" id="basic" name="basic">
-        <label for="standard">Standard</label>
-        <input type="checkbox" id="standard" name="standard">
-        <label for="premium">Premium</label>
-        <input type="checkbox" id="premium" name="premium">
-        <label for="bonus1">10 Bonus Photos</label>
-        <input type="checkbox" id="bonus1" name="bonus1">
-        <label for="bonus2">10 Prints</label>
-        <input type="checkbox" id="bonus2" name="bonus2">
-        <label for="bonus3">Wall Art</label>
-        <input type="checkbox" id="bonus3" name="bonus3">
+        <ul>
+            <li><label for="basic">Basic</label>
+                <input type="checkbox" id="basic" name="basic"></li>
+            <li><label for="standard">Standard</label>
+                <input type="checkbox" id="standard" name="standard"></li>
+            <li><label for="premium">Premium</label>
+                <input type="checkbox" id="premium" name="premium"></li>
+            <li><label for="bonus1-select">Bonus Photos</label>
+                <input type="checkbox" id="bonus1" name="bonus1"></li>
+                <select name="" id="bonus1-select">
+                    <option value="">--Please choose an option--</option>
+                    <option value="ten">10</option>
+                    <option value="twenty">20</option>
+                    <option value="thirty">30</option>
+                </select>
+                
+            <li><label for="bonus2-select">Prints</label>
+                <select name="" id="bonus2-select">
+                    <option value="">--Please choose an option--</option>
+                    <option value="ten">10</option>
+                    <option value="twenty">20</option>
+                    <option value="thirty">30</option>
+                </select>
+                <input type="checkbox" id="bonus2" name="bonus2"></li>
+            <li><label for="bonus3-select">Wall Art</label>
+                <select name="" id="bonus3-select">
+                    <option value="">--Please choose an option--</option>
+                    <option value="one">1</option>
+                    <option value="two">2</option>
+                    <option value="three">3</option>
+                </select>
+                <input type="checkbox" id="bonus3" name="bonus3"></li>
+        </ul>
         <button type="button" onclick="checked()">Submit</button>
-    </form>
-</body>
-<script src="calc.js"></script>
+    </form>*//
 
+    <div class="disclaimer">
+        <p>The pre-session consultation fee of $50 (included in all packages) is due to hold your place on the calendar.</p>
+        <p>Consultation fees are non-refundable, but I will work with you to reschedule if needed.</p>
+        <p>An additional fee is required for sessions on locations more than 20 miles from 40214. Contact for further information.</p>
+        <p>This is an estimate and does not guarantee final price. All prices are finalized upon contract.</p>
+      </div>
+</body>
+//*pantry, local storage lookup mozilla developer network, getpantry.cloud*//
 </html>
