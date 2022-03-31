@@ -434,12 +434,14 @@ form {
 .shop-item-details {
   display: flex;
   align-items: center;
-  padding: 5px;
+  padding: 10px;
+  flex-direction: column;
 }
 
 .shop-item-price {
   flex-grow: 1;
   color: white;
+  padding: 10px;
 }
 
 .shop-items {
@@ -485,6 +487,7 @@ form {
   color: rgb(133, 65, 160);
   margin-left: .5em;
   font-size: 1.2em;
+  padding: 10px;
 }
 
 .cart-item-image {

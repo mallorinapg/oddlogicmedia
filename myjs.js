@@ -1,4 +1,4 @@
-/* Contact Form JS */
+// Contact Form JS
 function getData() {
     let allMsg = [];
     let first_name = document.contactMeForm.firstname.value;
@@ -11,12 +11,13 @@ function getData() {
     }
     if(validateEmail(email)) {
         allMsg.push(first_name);
-    allMsg.push(last_name);
-    allMsg.push(email);
-    allMsg.push(message);
-    let stringTemplate = `First Name:  ${first_name} &nbsp; Last Name:  ${last_name} &nbsp; Email:  ${email} &nbsp; Message:  ${message}`;
-    
-    return stringTemplate;
+        allMsg.push(last_name);
+        allMsg.push(email);
+        allMsg.push(message);
+        //let stringTemplate = `First Name:  ${first_name} &nbsp; Last Name:  ${last_name} &nbsp; Email:  ${email} &nbsp; Message:  ${message}`;
+        window.localStorage.setItem('users', JSON.stringify(`${first_name}   ${last_name}     ${email}      ${message}`));
+        let user = JSON.parse(localStorage.getItem('users'));
+        return user;
     }
     else {
 
@@ -35,7 +36,7 @@ function preview() {
     let previewMsg = document.getElementById("previewMsg");
     let div = document.createElement("div");
     div.id = "errorMessage";
-    div.innerHTML = `${data}`;
+    div.innerHTML = `Local Storage: ${data}`;
     previewMsg.appendChild(div);
     document.contactMeForm.reset();
 }
