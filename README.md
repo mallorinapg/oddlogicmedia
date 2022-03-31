@@ -19,7 +19,7 @@ This is a business website for Odd Logic Photography and Film. This serves as a 
 1. A countdown clock that:
 - calculates and displays data based on a external factor, ie. collects the current date and time from the user's system and calculates and displays in real time the remaining time until the set date.
 
-2. A ‘Contact Us’ form), that : 
+2. A ‘Contact Us’ form that : 
 - saves the values (on click of Submit button) to an external file ie. Local Storage
 - implements a regular expression (regex) to ensure a field ie. email address is stored and displayed in same formatand then displays that information on 
 
