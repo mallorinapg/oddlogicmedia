@@ -3,7 +3,7 @@
 
 ## Introduction
 
-This is a business website for Odd Logic Photography and Film. This serves as a portfolio of the artists' work to generate future clients. I have included a gallery of the photographer's work, about me section for the photographer and editor, a page with package information, and a contact form. The stylization choices are in line with the brand designed by the photographer.
+This is a business website for Odd Logic Photography and Film. This serves as a portfolio of the artists' work to generate future clients. I have included a gallery of the photographer's work, about me section for the photographer and editor, a page with package information and calculator, and a contact form. The stylization choices are in line with the brand designed by the photographer.
 
 ## The CSS focus for this project includes:
 
@@ -12,14 +12,20 @@ This is a business website for Odd Logic Photography and Film. This serves as a 
 2. A Flexbox or CSS Grid to organize content areas based on mobile or desktop views that rearranges content from a horizontal layout to a vertical layout when reduced from desktop to mobile sizes. 
 - photo gallery
 - "Packages"
-- "About Me"
-- "Editor"
+- package calculator/shopping cart
 
 ## The Javascript focus for this project includes:
 
-1. A ‘Contact Us’ form), that validates at least one field (ex: email is in the correct format) and then displays that information on the page back to the user with a button click (Preview). This can be seen near the bottom of both pages.
+1. A countdown clock that:
+- calculates and displays data based on a external factor, ie. collects the current date and time from the user's system and calculates and displays in real time the remaining time until the set date.
 
-2. A countdown clock that collects the current date and time from the user's system and calculates and displays in real time the remaining time until the set date.
+2. A ‘Contact Us’ form), that : 
+- saves the values (on click of Submit button) to an external file ie. Local Storage
+- implements a regular expression (regex) to ensure a field ie. email address is stored and displayed in same formatand then displays that information on 
+
+3. A Package Calculator or pseudo shopping cart that:
+- creates an array, dictionary or list, populates it with multiple values, retrieve at least one value, and use or display it in the application
+- create and use a function that accepts two or more values, calculates or dertermines a new value based on those inputs, and returns a new value
 
 ## Media Queries
 
@@ -36,14 +42,10 @@ In order to view the site please:
 
 ### Future plans for the project include:
 
-1. Edit the form to save the values on click event to an external file for future retrieval. For now that will be a file in the cloud.
+1. Change the contact form to give the photographer access to the contact data, either through email or a password system.
 
-2. Create a package calculator that takes user input to determine estimates of various prices and displays that back to the user.
+2. Creating a pop-up form that is responsive to the contact form, thanking the user for their message and letting them know we will be back to them within 48hrs.
 
-3. Creating a pop-up form that is responsive to the contact form, thanking the user for their message and letting them know we will be back to them within 48hrs.
+3. Perform a Web Accessibility Compliance review on site and document all the tools and testing used to verify site is accessible. This may involve a written write-up, screenshots, and other ways of showing that site has been evaluated for accessibility compliance, including  the report in your GitHub repository.
 
-4. Three bootstrap carousels show/hide multiple content areas on the Packages page through clicking a button or some other user interaction.
-
-5. Perform a Web Accessibility Compliance review on site and document all the tools and testing used to verify site is accessible. This may involve a written write-up, screenshots, and other ways of showing that site has been evaluated for accessibility compliance, including  the report in your GitHub repository.
-
-6. Reformat the header, footer, hamburger btn to come from json file.
+4. Reformat the header, footer, hamburger btn to come from json file.
